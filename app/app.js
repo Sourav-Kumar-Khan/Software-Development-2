@@ -16,6 +16,7 @@ const db = require('./services/db');
 app.get("/", function(req, res) {
     res.send("Hello world! Every one");
 });
+
 // Create a endpoint to fetch all student data
 app.get("/all-students", function(req, res) {
     var sql = 'select * from Students';
